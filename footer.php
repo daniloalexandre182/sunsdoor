@@ -61,7 +61,7 @@
                     <p class="text-center">Copyright &copy;
                         <script>document.write(new Date().getFullYear());</script> Todos os direitos reservados |
                         Desenvolvido por <a href="https://www.daniloalexandre.com"
-                            target="_blank">Danilo Alexandre</a>
+                            target="_blank">Danilo Machado</a>
                     </p>
 
                 </div>
