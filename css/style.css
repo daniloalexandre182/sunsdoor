@@ -1,0 +1,332 @@
+/******************************************************************
+  Template Name: Ogani
+  Description:  Ogani eCommerce  HTML Template
+  Author: Colorlib
+  Author URI: https://colorlib.com
+  Version: 1.0
+  Created: Colorlib
+******************************************************************/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Template default CSS
+	1.1	Variables
+	1.2	Mixins
+	1.3	Flexbox
+	1.4	Reset
+2.  Helper Css
+3.  Header Section
+4.  Hero Section
+5.  Service Section
+6.  Categories Section
+7.  Featured Section
+8.  Latest Product Section
+9.  Contact
+10.  Footer Style
+-------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/* Template default CSS
+/*----------------------------------------*/
+
+html,
+body {
+	height: 100%;
+	font-family: "Cairo", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+.site-btn {
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: 800;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 13px 30px 12px;
+	background: #3990ad;
+	border: none;
+}
+
+/*---------------------
+  Helper CSS
+-----------------------*/
+
+
+/* ----------------------------------------------------------------------- */
+/* D.M.A. */
+
+.bg-black{
+	background: #000;
+}
+
+.header-frete p{
+	font-size: 13px;
+}
+
+.btn-pesquisa{
+    background-color: #f5f6fa;
+    padding: 15px 30px 15px 10px;
+    width: 370px;
+    height: 50px;
+    font-weight: 300;
+	border: #000 2px solid;
+}
+
+.btn-pesquisa:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.btn-buscar{
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-140%) translateY(-60%);
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: gray;
+}
+
+.header-link:hover, .produto a:hover, .sec-titulo a:hover{
+	color: #0056b3!important;
+}
+
+.fa-shopping-cart{
+	font-size: 25px;
+	padding-right: 3px;
+}
+
+.qtda_carrinho{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.bg-azul{
+	background: #1b72a8;
+}
+
+.bg-azul li a{
+	color: #fff;
+}
+
+.bg-azul li a:hover{
+	background: #34af23;
+}
+
+.whatsapp-fixed{
+    position: fixed;
+    z-index: 9999999;
+    right: 15px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 50%;
+    text-align: center;
+    transition: all .3s ease;
+    background-color: #34af23 !important;
+}
+
+.whatsapp-fixed i{
+    font-size: 40px;
+    margin-left: 1px;
+    line-height: 60px;
+}
+
+#carousel{
+	padding: 0;
+}
+
+
+/* PRODUTOS */
+
+
+.produto a, .sec-titulo a
+{
+	color: #212529;
+}
+
+.produto-preco span
+{
+	display: block;
+}
+
+.produto-valor
+{
+	font-size: 1.6rem!important;
+	font-weight: 650;
+}
+
+.produto-btn {
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 13px 30px 12px;
+	background: #3990ad;
+	border: none;
+}
+
+
+
+
+/* PRODUTOS */
+footer{
+	background: #1b72a8;
+	color: #fff;
+}
+
+footer a
+{
+	color: #fff;
+}
+
+.footer__copyright p
+{
+	margin: 0;
+}
+
+.footer__copyright a
+{
+	text-decoration: underline;
+}
+
+.footer__copyright a:hover
+{
+	color: #fff;
+}
+
+.footer__about {
+	margin-bottom: 30px;
+}
+
+.footer__about ul li {
+	font-size: 16px;
+	color: #fff;
+	line-height: 36px;
+	list-style: none;
+}
+
+.footer__about__logo {
+	margin-bottom: 15px;
+}
+
+.footer__about__logo a {
+	display: inline-block;
+}
+
+.footer__widget {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.footer__widget h6 {
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.footer__widget ul {
+	width: 50%;
+	float: left;
+}
+
+.footer__widget ul li {
+	list-style: none;
+}
+
+.footer__widget ul li a {
+	color: #fff;
+	font-size: 14px;
+	line-height: 32px;
+}
+
+.footer__widget p {
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.footer__widget form {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.footer__widget form input {
+	width: 100%;
+	font-size: 16px;
+	padding-left: 20px;
+	color: #1c1c1c;
+	height: 46px;
+	border: 1px solid #ededed;
+}
+
+.footer__widget form input::placeholder {
+	color: #1c1c1c;
+}
+
+.footer__widget form button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0 26px;
+	height: 100%;
+}
+
+.footer__widget .footer__widget__social a {
+	display: inline-block;
+	height: 41px;
+	width: 41px;
+	font-size: 16px;
+	color: #404040;
+	border: 1px solid #ededed;
+	border-radius: 50%;
+	line-height: 38px;
+	text-align: center;
+	background: #ffffff;
+	-webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-ms-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	margin-right: 10px;
+}
+
+.footer__widget .footer__widget__social a:last-child {
+	margin-right: 0;
+}
+
+.footer__widget .footer__widget__social a:hover {
+	background: #3990ad;
+	color: #ffffff;
+	border-color: #ffffff;
+}
